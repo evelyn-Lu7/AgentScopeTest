@@ -317,11 +317,23 @@ asyncio.run(multi_agent_conversation())
 
 使用以下命令安装并启动 AgentScope Studio，以追踪和可视化基于 AgentScope 构建的智能体应用。
 
-```bash
-npm install -g @agentscope/studio
+**系统要求**: Node.js >= 20.0.0, npm >= 10.0.0
 
-as_studio
+```bash
+npm install @agentscope/studio
+
+npx as_studio
 ```
+
+> **注意**: 如果您的 Node.js 版本低于 20.0.0，请先升级 Node.js。可以使用 [nvm](https://github.com/nvm-sh/nvm) 来管理多个 Node.js 版本：
+> ```bash
+> # 安装 nvm (如果尚未安装)
+> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+> 
+> # 安装并使用 Node.js 20
+> nvm install 20
+> nvm use 20
+> ```
 
 <p align="center">
     <img
